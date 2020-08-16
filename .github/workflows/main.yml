@@ -12,5 +12,4 @@ jobs:
         who-to-greet: 'mortalYoung'
     # Use the output from the `hello` step
     - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
-      run: echo "How are U? ${{ steps.hello.outputs.response }}"
+      run: echo "The time was ${{ steps.hello.outputs.time }}\n How are U? \n${{ steps.hello.outputs.response }}"
